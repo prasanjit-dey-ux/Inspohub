@@ -1,31 +1,50 @@
 'use client'
-import React from 'react'
 import clsx from 'clsx'
 import Image from 'next/image'
+import Link from 'next/link'
+import { SiteItem } from '@/types/site'
 
-type cardProp = {
-    className?: string
-    src: string
-    title: string
-    tag: string
-}
-
-
-export const Card = ({src, title, className, tag }: cardProp) => {
+export default function Card({image, title, className, tag, url, creator}: SiteItem) {
   return (
-    <div className={clsx('relative h-auto outline-1 outline-zinc-200 rounded-lg overflow-hidden aspect-4/3', className)}>
-        <Image  
-            src={src}
+    <div className={clsx('border border-slate-300 rounded-lg overflow-hidden group', className)}>
+        
+    <Link href={url} target='_blank'>
+      <div className=' relative aspect-4/2 overflow-hidden rounded-t-lg'>
+          {image ? (
+            <Image  
+            src={image}
             alt={title}
             fill
-            className='object-cover'
+            className='object-cover object-top transition-transform ease-out duration-500 group-hover:scale-[1.05]'
         />
-<div className="flex justify-between items-end px-4 py-3 absolute bg-neutral-100 w-full">
+          ): (
+            <div className="flex items-center justify-center h-full bg-zinc-50 text-zinc-400">
+              {title}
+            </div>
+          )}
+
+        <div className=' absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition flex items-center justify-center'>
+          <span className='text-black rounded-md px-2 py-1 text-sm font-medium flex justify-center  items-center bg-white'>Visit →</span>
+        </div>
+      </div>
+    </Link>
+
+<div className="flex justify-between items-end px-4 py-3 bg-neutral-50">
     <div>
-      <h3 className="text-black text-sm font-semibold">Superlist</h3>
-      <p className="text-zinc-500 text-sm font-medium">SaaS</p>
+      <h3 className="text-sm font-semibold">{title}</h3>
+      <p className="text-zinc-500 text-sm font-medium">{tag}</p>
     </div>
-    <span className="text-zinc-500 text-sm font-medium">2025</span>
+
+    { creator && (
+      <Link 
+      href={`http://x.com/${creator.replace("@", "")}`}
+      target='blank'
+      className='text-zinc-500 text-sm font-medium hover:underline hover:text-neutral-900'
+      >
+        {creator}
+      </Link>
+    )}
+
   </div>
 
     </div>
