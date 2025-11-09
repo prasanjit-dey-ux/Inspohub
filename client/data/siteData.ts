@@ -70,7 +70,7 @@ export const sitesData: SiteItem[] = [
   {
     id: "i3",
     title: "SEESAW",
-    tag: "Portfolio",
+    tag: "Inspiration",
     url: "https://www.seesaw.website/",
     creator: "seesawsite",
     image: "/images/seesaw.png",
