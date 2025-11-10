@@ -15,7 +15,7 @@ export default function Card({image, title, className, tag, url, creator}: SiteI
             src={image}
             alt={title}
             fill
-            className='object-cover object-top transition-transform ease-out duration-500 group-hover:scale-[1.05]'
+            className='object-cover object-top transition-transform ease-in-out duration-300 group-hover:scale-[1.05]'
         />
           ): (
             <div className="flex items-center justify-center h-full bg-zinc-50 text-zinc-400">
