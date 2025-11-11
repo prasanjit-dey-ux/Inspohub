@@ -5,8 +5,8 @@ import Navbar from "@/component/layout/navbar";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen max-w-5xl mx-auto px-6">
-      <Navbar />
+    <div className="min-h-screen max-w-2xl mx-auto px-6">
+
 
       <motion.section
         initial={{ opacity: 0, y: 20 }}
@@ -16,13 +16,13 @@ export default function AboutPage() {
       >
         {/* Small label */}
         <div className="flex justify-start mb-6">
-          <span className="text-xs font-medium tracking-widest text-neutral-400 uppercase border border-neutral-200 px-3 py-1 rounded-full">
+          <span className="text-xs font-medium tracking-widest text-neutral-400 uppercase border border-neutral-200 px-3 py-1 rounded-full hover:bg-neutral-100 transition duration-300">
             About Inspire
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-5xl sm:text-6xl font-semibold tracking-tight text-neutral-950 leading-tight max-w-3xl">
+        <h1 className="text-2xl sm:text-5xl font-semibold tracking-tight text-neutral-950 leading-tight max-w-3xl">
           Built for developers <br />
           <span className="text-neutral-400">who think visually.</span>
         </h1>
