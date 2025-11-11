@@ -18,8 +18,7 @@ export default function Navbar() {
   return (
     <nav
       className={clsx(
-        "sticky top-0 z-50 border-b border-neutral-100",
-        "bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/70"
+        "sticky top-0 z-50 bg-white backdrop-blur-md supports-backdrop-filter:bg-white/80 "
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
@@ -32,19 +31,35 @@ export default function Navbar() {
         </Link>
 
         {/* Nav Links */}
-        <div className="hidden sm:flex gap-6 text-sm font-medium">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={clsx(
-                "transition-colors hover:text-black text-neutral-500",
-                pathname === link.href && "text-black font-semibold"
-              )}
-            >
-              {link.name}
-            </Link>
-          ))}
+        <div className="hidden sm:flex gap-6 text-sm font-medium relative">
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={clsx(
+                  "relative transition-colors duration-200",
+                  isActive
+                    ? "text-black"
+                    : "text-neutral-500 hover:text-black"
+                )}
+              >
+                {link.name}
+
+                {/* ✅ Animated underline */}
+                <span
+                  className={clsx(
+                    "absolute left-0 -bottom-1 h-[1.5px] bg-black transition-all duration-300 ease-out",
+                    isActive
+                      ? "w-full"
+                      : "w-0 group-hover:w-full hover:w-full"
+                  )}
+                ></span>
+              </Link>
+            );
+          })}
         </div>
 
         {/* Mobile Placeholder (optional) */}
