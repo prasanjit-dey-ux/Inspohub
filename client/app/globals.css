@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-primary: "Plus Jakarta Sans"
+
+}
+
+.dark {
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-primary: var(--font-primary)
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,5 +29,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter'
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
