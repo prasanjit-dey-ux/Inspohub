@@ -34,7 +34,7 @@ export default function CardTool({logo, title, className, tag, url, creator}: Si
     </Link>
 
 <div className="flex justify-between items-end px-4 py-3 bg-neutral-50">
-    <div>
+    <div className='flex flex-col items-start justify-center gap-1'>
       <h3 className="text-sm font-semibold">{title}</h3>
       <p className="text-zinc-500 text-sm font-medium">{tag}</p>
     </div>
@@ -43,7 +43,7 @@ export default function CardTool({logo, title, className, tag, url, creator}: Si
       <Link 
       href={`http://x.com/${creator.replace("@", "")}`}
       target='blank'
-      className='text-zinc-500 text-sm font-medium hover:underline hover:text-neutral-900'
+      className='text-zinc-500 text-sm font-medium hover:underline hover:text-blue-700'
       >
         {creator}
       </Link>
