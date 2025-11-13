@@ -9,14 +9,15 @@ export const sitesData: SiteItem[] = [
     creator: "jordiplz",
     image: "/images/appinspo.png",
   },
-    {
+          {
     id: "p1",
-    title: "Abhinav Kale",
+    title: "Chánh Đại",
     tag: "Portfolio",
-    url: "https://abhi.at/",
-    creator: "Abhinavstwt",
-    image: "/images/avi.png",
+    url: "https://chanhdai.com/",
+    creator: "iamncdai",
+    image: "/images/chanh.png",
   },
+
   {
     id: "i2",
     title: "Craftwork",
@@ -25,14 +26,7 @@ export const sitesData: SiteItem[] = [
     creator: "craftworkdesign",
     image: "/images/craftwork_light.png",
   },
-        {
-    id: "p5",
-    title: "Chánh Đại",
-    tag: "Portfolio",
-    url: "https://chanhdai.com/",
-    creator: "iamncdai",
-    image: "/images/chanh.png",
-  },
+
       {
     id: "p2",
     title: "OPM",
@@ -49,6 +43,14 @@ export const sitesData: SiteItem[] = [
     url: "https://ui.aceternity.com/",
     creator: "mannupaaji",
     logo: "/logos/aceternity.png",
+  },
+      {
+    id: "p5",
+    title: "Abhinav Kale",
+    tag: "Portfolio",
+    url: "https://abhi.at/",
+    creator: "Abhinavstwt",
+    image: "/images/avi.png",
   },
 
     {
@@ -75,5 +77,6 @@ export const sitesData: SiteItem[] = [
     creator: "seesawsite",
     image: "/images/seesaw.png",
   },
+  
 
 ];
