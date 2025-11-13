@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono} from "next/font/google";
+import { Inter, JetBrains_Mono, Instrument_Serif} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/layout/navbar";
 
@@ -8,10 +8,16 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const jetBrains_Mono = JetBrains_Mono({
+const jetBrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
 });
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: "400",
+})
 
 export const metadata: Metadata = {
   title: "INSPIRE — Discover Websites That Inspire Creativity",
@@ -25,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetBrains_Mono.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} antialiased`}>
       <body
         className="font-sans antialiased bg-white text-neutral-900"
       >
