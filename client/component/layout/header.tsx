@@ -7,13 +7,13 @@ type HeaderProps = {
 
 export default function Header({title, description, highlight}: HeaderProps){
   return (
-    <div className="pt-80 pb-10">
-      <h1 className="text-6xl font-medium  text-neutral-950 tracking-tight uppercase  max-w-3xl">
+    <div className="pt-20 pb-10 md:pt-24 ">
+      <h1 className="md:text-6xl text-4xl font-medium md:leading-16  text-neutral-900 tracking-tight uppercase max-w-3xl">
         {title}{" "}
         <br />
-        <span className="text-neutral-400">{highlight}</span>
+        <span className=" text-blue-700 font-serif font-medium">{highlight}</span>
       </h1>
-      <p className="text-neutral-400 text-base max-w-xl mt-6">
+      <p className="text-neutral-400 md:text-base text-sm max-w-xl mt-6">
         {description}
       </p>
   </div>
