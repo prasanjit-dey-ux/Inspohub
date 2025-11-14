@@ -1,13 +1,11 @@
 "use client";
 
 import { motion } from "motion/react"
-import Navbar from "@/component/layout/navbar";
+
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen max-w-2xl mx-auto px-6">
-
-
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -24,13 +22,13 @@ export default function AboutPage() {
         {/* Main Heading */}
         <h1 className="text-2xl sm:text-5xl font-semibold tracking-tight text-neutral-950 leading-tight max-w-3xl">
           Built for developers <br />
-          <span className="text-neutral-400">who think visually.</span>
+          <span className="text-blue-700 font-serif font-medium">who think visually.</span>
         </h1>
 
         {/* Description */}
         <div className="mt-10 max-w-2xl text-neutral-600 leading-relaxed space-y-6 text-base">
           <p>
-            <strong>INSPIRE</strong> was built for developers who think visually. Our goal is to make finding
+            <strong className="text-blue-700">INSPIRE</strong> was built for developers who think visually. Our goal is to make finding
             inspiration simple, minimal, and meaningful.
           </p>
 
