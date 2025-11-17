@@ -1,20 +1,16 @@
-"use client";
+"use client"
 
 import clsx from "clsx";
 import { motion } from "motion/react";
 
-const FILTERS = ["All", "Portfolio", "Inspiration", "Tools"];
 
-export default function Filters({
-  activeFilter,
-  setActiveFilter,
-}: {
-  activeFilter: string;
-  setActiveFilter: (f: string) => void;
-}) {
-  return (
-    <div className="flex justify-between items-center mt-20">
-      {/* LEFT SIDE FILTER BUTTONS */}
+// to avoid manually writing 4 buttons
+const FILTERS = ["All", "Portfolio", "Inspiration", "Tools"]
+
+//  setActiveFilter: (f: string) => void;setActiveFilter is a function and It takes a single string argument (f: string) and it returns nothing (void)
+export const Filters = ({activeFilter, setActiveFilter}: {activeFilter: string, setActiveFilter: (f: string) => void}) => {
+return (
+   <div className="flex justify-between items-center mt-10">
       <div className="flex items-center gap-2">
         {FILTERS.map((filter) => {
           const isActive = filter === activeFilter;
@@ -37,8 +33,7 @@ export default function Filters({
         })}
       </div>
 
-      {/* RIGHT SIDE BUTTONS */}
-      <div className="flex gap-3">
+    <div className="flex gap-3">
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.96 }}
@@ -56,5 +51,5 @@ export default function Filters({
         </motion.button>
       </div>
     </div>
-  );
+)
 }
