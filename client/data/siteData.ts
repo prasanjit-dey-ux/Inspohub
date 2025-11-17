@@ -77,6 +77,61 @@ export const sitesData: SiteItem[] = [
     creator: "seesawsite",
     image: "/images/seesaw.png",
   },
-  
+  {
+  id: "i4",
+  title: "Awwwards",
+  tag: "Inspiration",
+  url: "https://www.awwwards.com/",
+  creator: "Awwwards",
+  image: "/images/awwwards.png",
+},
+{
+  id: "i5",
+  title: "Siteinspire",
+  tag: "Inspiration",
+  url: "https://www.siteinspire.com/",
+  creator: "siteinspire",
+  image: "/images/siteinspire.png",
+},
+{
+  id: "i6",
+  title: "Minimal Gallery",
+  tag: "Inspiration",
+  url: "https://minimal.gallery/",
+  creator: "minimal_gallery",
+  image: "/images/minimal.png",
+},
+{
+  id: "i7",
+  title: "Godly Website",
+  tag: "Inspiration",
+  url: "https://godly.website/",
+  creator: "GodlyWebsite",
+  image: "/images/godly.png",
+},
+{
+  id: "i8",
+  title: "Landingfolio",
+  tag: "Inspiration",
+  url: "https://www.landingfolio.com/",
+  creator: "landingfolio",
+  image: "/images/landingfolio.png",
+},
+{
+  id: "i9",
+  title: "Lapa Ninja",
+  tag: "Inspiration",
+  url: "https://www.lapa.ninja/",
+  creator: "lapaninja",
+  image: "/images/lapaninja.png",
+},
+{
+  id: "i10",
+  title: "Mobbin",
+  tag: "Inspiration",
+  url: "https://mobbin.com/",
+  creator: "mobbin",
+  image: "/images/mobbin1.png"
+},
 
 ];
