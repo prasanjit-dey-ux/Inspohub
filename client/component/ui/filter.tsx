@@ -4,7 +4,6 @@ import clsx from "clsx";
 import { motion } from "motion/react";
 
 
-// to avoid manually writing 4 buttons
 const FILTERS = ["All", "Portfolio", "Inspiration", "Tools"]
 
 //  setActiveFilter: (f: string) => void;setActiveFilter is a function and It takes a single string argument (f: string) and it returns nothing (void)
