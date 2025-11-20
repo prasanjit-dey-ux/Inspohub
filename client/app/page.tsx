@@ -29,10 +29,8 @@ export default function Home() {
           description="Discover the best developer portfolios, design ideas, and tools — all in one place. Get inspired and create your next big thing with confidence."
         />
 
-        {/* FILTER BAR */}
         <Filters activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
 
-        {/* GRID SECTION */}
         <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
