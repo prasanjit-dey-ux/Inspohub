@@ -23,7 +23,7 @@ return (
                 "px-4 py-1.5 rounded-md text-sm font-medium transition-all",
                 isActive
                   ? "bg-neutral-100 text-blue-700"
-                  : "bg-neutral-50 text-neutral-600 hover:bg-neutral-100"
+                  : " text-neutral-600 hover:bg-neutral-100"
               )}
             >
               {filter}
