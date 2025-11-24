@@ -1,4 +1,7 @@
+
 @import "tailwindcss";
+
+
 
 :root {
   --background: #ffffff;
@@ -26,6 +29,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+.font-signature {
+  font-family: var(--font-signature), cursive;
 }
 
 
