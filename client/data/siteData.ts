@@ -134,4 +134,30 @@ export const sitesData: SiteItem[] = [
   image: "/images/mobbin1.png"
 },
 
+{
+  id: "i11",
+  title: "Carl Beaverson",
+  tag: "Portfolio",
+  url: "https://carlbeaverson.com",
+  creator: "CarlBeaverson",
+  image: "/images/carlbeaverson.png",
+},
+{
+  id: "i12",
+  title: "Designspells",
+  tag: "Inspiration",
+  url: "https://www.designspells.com",
+  creator: "designspells_",
+  image: "/images/designspells.png",
+},
+{
+  id: "i13",
+  title: "Sapiens",
+  tag: "Inspiration",
+  url: "https://sapiens.website",
+  creator: "sapiens",
+  image: "/images/sapiens.png",
+},
+
+
 ];
