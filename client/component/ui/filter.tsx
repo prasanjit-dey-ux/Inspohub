@@ -1,6 +1,7 @@
 "use client"
 
 import clsx from "clsx";
+import { Star } from "lucide-react";
 import { motion } from "motion/react";
 
 
@@ -38,7 +39,7 @@ return (
           whileTap={{ scale: 0.96 }}
           className="px-4 py-2 bg-blue-700 text-white border border-blue-600 rounded-md text-sm"
         >
-          Submit
+            Get Featured
         </motion.button>
 
         <motion.button
@@ -46,7 +47,10 @@ return (
           whileTap={{ scale: 0.96 }}
           className="px-4 py-2 bg-neutral-900 text-white rounded-md text-sm"
         >
-          Sponsor Us
+          <div className="flex justify-between items-center gap-2">
+           <Star size={16}/>
+          Github  
+          </div>
         </motion.button>
       </div>
     </div>
