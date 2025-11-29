@@ -27,7 +27,11 @@ export default function Navbar() {
           href="/"
           className="text-xl font-semibold tracking-tight text-neutral-900 hover:text-neutral-700 transition"
         >
-          INSPIRE
+        <h2 className="text-lg flex items-center gap-2 font-semibold tracking-tight">
+              <div className="bg-blue-700 size-6 flex justify-end items-baseline-last">
+                <div className="rounded-full size-3 bg-white"></div>
+              </div>
+              INSPIRE</h2>
         </Link>
 
         {/* Nav Links */}
