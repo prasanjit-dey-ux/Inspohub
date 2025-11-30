@@ -5,6 +5,11 @@ import Link from 'next/link'
 import { SiteItem } from '@/types/site'
 
 export default function Card({image, title, className, tag, url, creator}: SiteItem) {
+  
+  const username = creator 
+    ? creator.replace("https://", "").replace("http://", "").split("/")[1]
+    : null; 
+  
   return (
     <div className={clsx('border border-slate-300 rounded-lg overflow-hidden group', className)}>
         
@@ -35,13 +40,13 @@ export default function Card({image, title, className, tag, url, creator}: SiteI
       <p className="text-zinc-500 text-sm font-medium">{tag}</p>
     </div>
 
-    { creator && (
+    { creator && username  && (
       <Link 
-      href={`http://x.com/${creator.replace("@", "")}`}
-      target='blank'
+      href={creator}
+      target='_blank'
       className='text-zinc-500 text-sm font-medium hover:underline hover:text-blue-700'
       >
-        {creator}
+        {username}
       </Link>
     )}
 
