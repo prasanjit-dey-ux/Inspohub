@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="bg-blue-700 size-6 flex justify-end items-baseline-last">
                 <div className="rounded-full size-4 bg-white"></div>
               </div>
-              INSPIRE</h2>
+              INSPIIRE</h2>
             <p className="mt-2 text-neutral-500 max-w-xs">
               Curated inspiration for developers who think visually.
             </p>
