@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Card from "@/component/ui/card";
-import CardTool from "@/component/ui/toolCard";
 import Header from "@/component/layout/header";
 import { Container } from "@/component/ui/container";
 import { sitesData } from "@/data/siteData";
@@ -43,7 +42,6 @@ export default function Home() {
 
           <Filters activeFilter={activeFilter} setActiveFilter={handleFilterChange} />
 
-          {/* GRID */}
           <motion.div
             key={activeFilter + page}
             initial={{ opacity: 0, y: 10 }}
@@ -52,15 +50,10 @@ export default function Home() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"
           >
             {visibleItems.map((item) =>
-              item.tag === "Tool" ? (
-                <CardTool key={item.id} {...item} />
-              ) : (
-                <Card key={item.id} {...item} />
-              )
+                <Card key={item.id} {...item} />       
             )}
           </motion.div>
 
-          {/* PAGINATION */}
           <div className="flex items-center justify-center gap-4 mt-20 mb-20">
 
             <button
