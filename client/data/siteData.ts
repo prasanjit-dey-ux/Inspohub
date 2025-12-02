@@ -43,7 +43,7 @@ export const sitesData: SiteItem[] = [
     tag: "Tool",
     url: "https://ui.aceternity.com/",
     creator: "https://x.com/mannupaaji",
-    logo: "/logos/aceternity.png",
+    image: "/images/ace.png",
   },
 
   {
