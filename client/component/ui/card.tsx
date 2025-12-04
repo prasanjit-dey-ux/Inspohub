@@ -7,7 +7,11 @@ import { SiteItem } from '@/types/site'
 export default function Card({image, title, className, tag, url, creator}: SiteItem) {
   
   const username = creator 
-    ? creator.replace("https://", "").replace("http://", "").split("/")[1]
+    ? creator.replace("https://", "")
+    .replace("http://", "")
+    .split("/")
+    .filter(Boolean)
+    .pop()
     : null; 
   
   return (
