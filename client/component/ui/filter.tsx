@@ -1,11 +1,11 @@
 "use client"
 
 import clsx from "clsx";
-import { Star } from "lucide-react";
+import { Github, } from "lucide-react";
 import { motion } from "motion/react";
 
 
-const FILTERS = ["All", "Portfolio", "Inspiration", "Tools"]
+const FILTERS = ["All", "Portfolio", "Inspiration", "Tool"]
 
 //  setActiveFilter: (f: string) => void;setActiveFilter is a function and It takes a single string argument (f: string) and it returns nothing (void)
 export const Filters = ({activeFilter, setActiveFilter}: {activeFilter: string, setActiveFilter: (f: string) => void}) => {
@@ -48,7 +48,7 @@ return (
           className="px-4 py-2 bg-neutral-900 text-white rounded-md text-sm"
         >
           <div className="flex justify-between items-center gap-2">
-           <Star size={16}/>
+           <Github size={16}/>
           Github  
           </div>
         </motion.button>
