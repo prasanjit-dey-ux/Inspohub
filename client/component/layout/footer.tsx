@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="py-6 ">
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-start">
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-start mt-2">
         
 
         <div className="flex flex-col gap-10">
@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
       <p className="mt-10 text-center text-sm text-neutral-500">
-        © 2025 INSPIRE — All rights reserved.
+        © 2025 INSPIRE — All content belong to their original owner.
       </p>
     </footer>
   );
