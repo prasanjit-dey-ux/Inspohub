@@ -52,7 +52,7 @@ export const sitesData: SiteItem[] = [
     tag: "Portfolio",
     url: "https://abhi.at/",
     creator: "https://x.com/Abhinavstwt",
-    image: "/images/avi.png",
+    image: "/images/abhinav.png",
   },
 
   {
