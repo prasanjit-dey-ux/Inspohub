@@ -10,8 +10,8 @@ export default function PortfolioPage() {
     <div className="min-h-screen max-w-7xl mx-auto px-6">
 
       <Header
-        title="Explore developer"
-        highlight="Portfolios."
+        title="Explore Best"
+        highlight="Developer Portfolios."
         description="Discover curated portfolios of developers building beautiful, functional, and creative websites."
       />
 
