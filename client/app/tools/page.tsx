@@ -10,8 +10,8 @@ export default function InspirationPage() {
     <div className="min-h-screen max-w-7xl mx-auto px-6">
 
       <Header
-        title="Explore Design"
-        highlight="Inspiration"
+        title="Tools that actually"
+        highlight="make you faster"
         description="A curated collection of websites that balance design and functionality.
 Each one chosen to help developers and designers think beyond the ordinary."
       />
