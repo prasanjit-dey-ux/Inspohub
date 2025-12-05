@@ -48,7 +48,7 @@ export default function AboutPage() {
 
         {/* Footer note */}
         <p className="text-sm text-neutral-400">
-          Curated by developers, for developers — built with Next.js, Tailwind, and curiosity.
+          Built by <a href="https://x.com/Prasanjit_ui" className="text-blue-700 hover:underline">Prasanjit Dey</a> with Next.js, Tailwind, and a love for good design.
         </p>
       </motion.section>
     </div>
