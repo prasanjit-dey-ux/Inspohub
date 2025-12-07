@@ -72,7 +72,6 @@ export const sitesData: SiteItem[] = [
     creator: "https://x.com/emilkowalski_",
     image: "/images/emil_kowalski.png",
   },
-
   {
     id: "i3",
     title: "SEESAW",
@@ -89,6 +88,14 @@ export const sitesData: SiteItem[] = [
     url: "https://www.awwwards.com/",
     creator: "https://x.com/awwwards",
     image: "/images/awwwards.png",
+  },
+    {
+    id: "p8",
+    title: "Vansh Nagar",
+    tag: "Portfolio",
+    url: "https://vanshnagar.me/",
+    creator: "https://x.com/vansh1029",
+    image: "/images/vansh.png",
   },
 
   {
