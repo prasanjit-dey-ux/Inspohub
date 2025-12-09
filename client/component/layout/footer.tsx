@@ -29,10 +29,10 @@ export default function Footer() {
 
 
           <div className="mt-2 flex flex-col gap-2 text-sm">
-            <Link href="https://github.com" className="hover:text-blue-700 text-neutral-500">
+            <Link href="https://github.com/prasanjit_dey_ux/" className="hover:text-blue-700 text-neutral-500">
               GitHub
             </Link>
-            <Link href="https://twitter.com" className="hover:text-blue-700 text-neutral-500">
+            <Link href="https://x.com/Prasanjit_ui.com" className="hover:text-blue-700 text-neutral-500">
               Twitter
             </Link>
             <Link href="/sponsor" className="hover:text-blue-700 text-neutral-500">
