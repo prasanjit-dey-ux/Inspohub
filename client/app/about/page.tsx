@@ -28,19 +28,22 @@ export default function AboutPage() {
         {/* Description */}
         <div className="mt-10 max-w-2xl text-neutral-600 leading-relaxed space-y-6 text-base">
           <p>
-            <strong className="text-blue-700">INSPIRE</strong> was built for developers who think visually. Our goal is to make finding
-            inspiration simple, minimal, and meaningful.
+            <strong className="text-blue-700">INSPOSITE</strong> is a curated collection of design inspiration, portfolios, and tools built for developers and designers.
           </p>
 
           <p>
-            In a world overflowing with design inspiration, we curate what matters — clean portfolios,
-            thoughtful interfaces, and tools that enhance your workflow.
+              I realized I was spending hours scrolling through generic design galleries looking for things I could actually build. InspoSite is the solution—a dedicated space for frontend inspiration, developer portfolios, and the tools that make them possible.
           </p>
 
           <p>
             We believe great design starts with great references. Whether you’re building your first portfolio
-            or launching your next SaaS, INSPIRE is here to spark ideas and guide your creative process.
+            or launching your next SaaS, INSPOSITE is here to spark ideas and guide your creative process.
           </p>
+
+          <p>Every submission is reviewed to maintain quality. No spam, no fluff.
+          </p>
+
+
         </div>
 
         {/* Divider */}
@@ -48,7 +51,7 @@ export default function AboutPage() {
 
         {/* Footer note */}
         <p className="text-sm text-neutral-400">
-          Built by <a href="https://x.com/Prasanjit_ui" className="text-blue-700 hover:underline">Prasanjit Dey</a> with Next.js, Tailwind, and a love for good design.
+          Built by <a href="https://x.com/Prasanjit_ui" className="text-blue-700 hover:underline">Prasanjit Dey</a> with Next.js, Tailwind, Motion and a love for good design.
         </p>
       </motion.section>
     </div>
