@@ -1,6 +1,8 @@
-
+"use client";
 import Header from "@/component/layout/header";
+import { ActionBar } from "@/component/ui/actionBar";
 import Card from "@/component/ui/card";
+import { PaginatedGrid } from "@/component/ui/paginationGrid";
 import { sitesData } from "@/data/siteData";
 
 export default function InspirationPage() {
@@ -10,17 +12,17 @@ export default function InspirationPage() {
     <div className="min-h-screen max-w-7xl mx-auto px-6">
 
       <Header
-        title="Explore Design"
-        highlight="Inspiration"
-        description="A curated collection of websites that balance design and functionality.
-Each one chosen to help developers and designers think beyond the ordinary."
+        title="Design Inspiration"
+        highlight="Worth Studying."
+        description="Every site here was chosen for one reason — it inspires.
+Use these ideas to refine your next project, layout, or creative mood."
       />
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 pb-20">
-        {InspirationItems.map((item) => (
-          <Card key={item.id} {...item} />
-        ))}
-      </div>
+      <ActionBar />
+      <PaginatedGrid
+        data={InspirationItems}
+        itemsPerPage={15} 
+        renderItem={(item) => <Card key={item.id} {...item} />}
+      />
     </div>
   );
 }
