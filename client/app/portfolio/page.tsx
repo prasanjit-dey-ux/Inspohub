@@ -1,6 +1,8 @@
-
+"use client";
 import Header from "@/component/layout/header";
+import { ActionBar } from "@/component/ui/actionBar";
 import Card from "@/component/ui/card";
+import { PaginatedGrid } from "@/component/ui/paginationGrid";
 import { sitesData } from "@/data/siteData";
 
 export default function PortfolioPage() {
@@ -10,16 +12,18 @@ export default function PortfolioPage() {
     <div className="min-h-screen max-w-7xl mx-auto px-6">
 
       <Header
-        title="Explore Best"
-        highlight="Developer Portfolios."
-        description="Discover curated portfolios of developers building beautiful, functional, and creative websites."
+        title="Portfolios That"
+        highlight="Actually Inspire."
+        description="Dive into thoughtfully crafted portfolios by designers and developers.
+        Discover how others tell their story — then, build your own."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 pb-20">
-        {portfolioItems.map((item) => (
-          <Card key={item.id} {...item} />
-        ))}
-      </div>
+      <ActionBar />
+      <PaginatedGrid 
+        data={portfolioItems}
+        itemsPerPage={15}
+        renderItem={(item) => <Card key={item.id} {...item} />}
+      />
     </div>
   );
 }
