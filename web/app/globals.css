@@ -7,11 +7,7 @@
   --background: #ffffff;
   --foreground: #171717;
 
-}
-
-.dark {
-  --background: #171717;
-  --foreground: #ffffff;
+  color-scheme: light;
 }
 
 @theme inline {
@@ -21,20 +17,19 @@
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
   --font-signature: var(--font-signature);
-  --font-jakarta: var(--font-jakarta)
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-jakarta: var(--font-jakarta);
 }
 
 .font-signature {
   font-family: var(--font-signature), cursive;
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
 
 
