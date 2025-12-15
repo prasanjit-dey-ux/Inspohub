@@ -32,10 +32,34 @@ const sacramento = Sacramento({
 });
 
 export const metadata: Metadata = {
-  title: "INSPIRE — Discover Websites That Inspire Creativity",
+  title: "INSPOSITE — Curated inspiration for creative minds",
   description:
-    "Discover the best developer portfolios, design ideas, and tools — curated for developers who think visually.",
+    "Discover developer portfolios, inspiration websites, and useful web tools — curated for people who build for the web.",
+  openGraph: {
+    title: "INSPOSITE — Curated inspiration for creative minds",
+    description:
+      "Portfolios, inspiration sites, and useful web tools in one curated hub.",
+    url: "https://insposite.vercel.app",
+    siteName: "INSPOSITE",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "INSPOSITE - curated inspiration for creative minds",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "INSPOSITE — Curated inspiration for creative minds",
+    description:
+      "Portfolios, inspiration websites, and useful web tools for people who build for the web.",
+    images: ["/og-image.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -43,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} ${sacramento.variable}${plusJakartaSans.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} ${sacramento.variable} ${plusJakartaSans.variable} antialiased`}>
       <body
         className="font-sans antialiased bg-white text-neutral-900"
       >
