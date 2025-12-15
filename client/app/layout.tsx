@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Instrument_Serif, Sacramento} from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, JetBrains_Mono, Instrument_Serif, Sacramento} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/layout/navbar";
 import Footer from "@/component/layout/footer";
 
 const inter = Inter({
   variable: "--font-sans",
+  subsets: ["latin"],
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
 });
 
@@ -38,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} ${sacramento.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable} ${instrumentSerif.variable} ${sacramento.variable}${plusJakartaSans.variable} antialiased`}>
       <body
         className="font-sans antialiased bg-white text-neutral-900"
       >
