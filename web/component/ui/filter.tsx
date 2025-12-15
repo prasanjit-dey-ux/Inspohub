@@ -48,7 +48,7 @@ return (
       </Link>
 
 
-      <Link href="https://github.com/prasanjit-dey-ux" target="_blank" className="w-full sm:w-auto">
+      <Link href="https://github.com/prasanjit-dey-ux/Insposite.git" target="_blank" className="w-full sm:w-auto">
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.96 }}

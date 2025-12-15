@@ -20,7 +20,7 @@ export const ActionBar = () => {
         </motion.button>
       </Link>
 
-      <Link href="https://github.com/prasanjit_dey_ux/" target="_blank">
+      <Link href="https://github.com/prasanjit-dey-ux/Insposite.git" target="_blank">
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.96 }}
