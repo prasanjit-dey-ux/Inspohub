@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans, JetBrains_Mono, Instrument_Serif, Sacramento}
 import "./globals.css";
 import Navbar from "@/component/layout/navbar";
 import Footer from "@/component/layout/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -32,6 +33,7 @@ const sacramento = Sacramento({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://insposite.vercel.app"),
   title: "INSPOSITE — Curated inspiration for creative minds",
   description:
     "Discover developer portfolios, inspiration websites, and useful web tools — curated for people who build for the web.",
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "INSPOSITE",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "INSPOSITE - curated inspiration for creative minds",
@@ -74,6 +76,8 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+
+        <Analytics />
       </body>
     </html>
   );
