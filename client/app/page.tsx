@@ -27,9 +27,9 @@ export default function Home() {
       <div className="relative z-10">
         <Container>
           <Header
-            title="Discover websites that"
-            highlight="Inspire creativity"
-            description="Discover the best developer portfolios, design ideas, and tools — all in one place."
+            title="Curated Inspiration"
+            highlight="For People Who Build"
+            description="Design references, portfolios, and tools in one place. No more endless bookmarks—just quality resources for developers and designers."
           />
 
           <Filters activeFilter={activeFilter} setActiveFilter={handleFilterChange} />
