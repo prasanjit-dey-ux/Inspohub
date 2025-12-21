@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "INSPOSITE",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og1.png",
         width: 1200,
         height: 630,
         alt: "INSPOSITE - curated inspiration for creative minds",
@@ -58,7 +58,11 @@ export const metadata: Metadata = {
     title: "INSPOSITE — Curated inspiration for creative minds",
     description:
       "Portfolios, inspiration websites, and useful web tools for people who build for the web.",
-    images: ["/og-image.png"],
+    images: ["/og1.png"],
+    
+  },
+  icons: {
+    icon: "/logo.svg",
   },
 };
 
