@@ -15,7 +15,7 @@ export default function Footer() {
               INSPOSITE
             </h2>
             <p className="mt-2 text-neutral-500  max-w-8/12">
-              Curated inspiration for people who think visually.
+              Curated inspiration for people who build.
             </p>
           </div>
 
