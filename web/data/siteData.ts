@@ -124,6 +124,14 @@ export const sitesData: SiteItem[] = [
     creator: "https://x.com/GodlyWebsite",
     image: "/images/godly.png",
   },
+  {
+  id: "p9",
+  title: "Karaan",
+  tag: "Portfolio",
+  url: "https://www.karaan.me/",
+  creator: "https://x.com/karaan_dev",
+  image: "/images/karaan.png", 
+},
 
   {
     id: "i8",
