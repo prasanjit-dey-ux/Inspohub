@@ -282,7 +282,23 @@ export const sitesData: SiteItem[] = [
   url: "https://photogradient.com/",
   creator: "https://x.com/daniel__designs",
   image: "/images/photogradient.png",
-}
+},
+{
+    id: "t9",
+    title: "Efecto",
+    tag: "Tool",
+    url: "https://efecto.app/",
+    creator: "https://x.com/pablostanley",
+    image: "/images/efecto.png",
+  },
+  {
+    id: "i18",
+    title: "Storefront Design",
+    tag: "Inspiration",
+    url: "https://www.storefront.design/",
+    creator: "https://x.com/STRFRNTDESIGN",
+    image: "/images/storefront.png",
+  },
 
 
 ];
