@@ -289,7 +289,7 @@ export const sitesData: SiteItem[] = [
     tag: "Tool",
     url: "https://efecto.app/",
     creator: "https://x.com/pablostanley",
-    image: "/images/efecto.png",
+    image: "/images/effecto.png",
   },
   {
     id: "i18",
