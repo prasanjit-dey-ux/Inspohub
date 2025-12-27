@@ -14,7 +14,7 @@ export default function InspirationPage() {
     <div className="min-h-screen max-w-7xl mx-auto px-6">
 
       <Header
-        title="Tools That Acctually "
+        title="Tools That Actually "
         highlight="Save Time"
         description="AI tools, design utilities, and resources that make your workflow faster. Handpicked for developers and designers who want to ship better work."
       />
